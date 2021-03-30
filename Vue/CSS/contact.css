@@ -1,0 +1,17 @@
+.text img {
+    width: 40%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 49%;
+        height: auto;
+    }
+    .text,
+    form {
+        padding: 0 2%;
+        width: 49%;
+        font-size: 15px;
+    }
+}

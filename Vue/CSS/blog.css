@@ -1,0 +1,57 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400;1,700&display=swap');
+main {
+    font-family: 'Lato';
+}
+
+main p {
+    font-size: calc(8px + 0.7vw);
+}
+
+h2 {
+    font-size: calc(20px + 0.7vw);
+    ;
+}
+
+main .date_auteur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main figcaption {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+main .date_auteur a {
+    padding: 5px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+main .article a {
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+main .publish a {
+    color: #fff;
+    background-color: #33b5e5;
+    padding: 10px 45px;
+    border-radius: 5px;
+}
+
+.latest-article {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+}
