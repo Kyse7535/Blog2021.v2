@@ -2,7 +2,18 @@
 
 function connexion()
 {
-    $base = new PDO("mysql:host = 127.0.0.1;dbname=_test", "kisse", "AF+%y)PhAb.r7.s");
+    $jawsdbUrl = getenv('JAWSDB_URL'); // Replace with your actual URL if not using environment variables
+
+    // Parse the URL to extract connection components
+    $dbParts = parse_url($jawsdbUrl);
+
+    // Build the DSN
+    $dsn = "mysql:host=" . $dbParts['host'] . ";port=" . $dbParts['port'] . ";dbname=" . ltrim($dbParts['path'], '/');
+    $username = $dbParts['user'];
+    $password = $dbParts['pass'];
+
+    // Create a PDO instance
+    base = new PDO($dsn, $username, $password);
     $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "connexion reussie <br>";
     return $base;
