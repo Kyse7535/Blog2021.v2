@@ -13,7 +13,7 @@ function connexion()
     $password = $dbParts['pass'];
 
     // Create a PDO instance
-    base = new PDO($dsn, $username, $password);
+    $base = new PDO($dsn, $username, $password);
     $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "connexion reussie <br>";
     return $base;
