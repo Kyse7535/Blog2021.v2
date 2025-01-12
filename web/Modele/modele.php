@@ -3,7 +3,7 @@
 function connexion()
 {
     $jawsdbUrl = getenv('JAWSDB_URL'); // Replace with your actual URL if not using environment variables
-
+    print("---------- " . $jawsdbUrl);
     // Parse the URL to extract connection components
     $dbParts = parse_url($jawsdbUrl);
 
